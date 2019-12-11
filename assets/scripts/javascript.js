@@ -6,4 +6,6 @@ $ (document).ready(function(){
     var currentDate = moment().format("dddd, MMMM Do YYYY");
 //display date and time
 $("#todaysDate").text(currentDate)
+console.log(currentDate)
 })
+
