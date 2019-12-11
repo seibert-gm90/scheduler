@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Scheduler</title>
-    
+
 </head>
+
 <body>
-<container id = "mainContainer">
-    <div class = "row" id = "dateTime">time/date
-        <div class = "col">
-        </div> 
-    </div>
+    <container id="mainContainer">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="welcomeMessage">Day Planner Scheduler</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                </p>
+            </div>
+        </div>
+        <div  class="row" id="dateTime">
+            <div style = "justify-content: center;" class="col">
+                <h1 id= "todaysDate"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li style="list-style-type:none;" input type="text">9am <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">10am <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">11am <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">12pm <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">1pm <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">2pm <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">3pm <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">4pm <button>Save</button></li>
+                    <li style="list-style-type:none;" input type="text">5pm <button>Save</button></li>
+                </ul>
+            </div>
+        </div>
 
-
-</container>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    </container>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <script src="moment.js"></script>
     <script src="assets/scripts/javascript.js"></script>
 
 
 
-<script>
-    moment().format();
-</script>
+    <script>
+        moment().format();
+    </script>
+
+    <script>
+        var span = $("<span>");
+        var now = moment();
+        var when = moment().add(7, 'days').subtract(1, 'months').year(2009).hours(0).minutes(0).seconds(0);
+        var now = moment("12-25-1995", "MM-DD-YYYY");
+
+    </script>
 </body>
+
 </html>
