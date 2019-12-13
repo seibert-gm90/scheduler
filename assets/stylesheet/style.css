@@ -8,9 +8,10 @@ body {
 }
 
 
-.mainContainer {
-    width: 100%;
-    grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+#mainContainer {
+    width: auto; 
+
+    
 }
 
 .jumbotron {
