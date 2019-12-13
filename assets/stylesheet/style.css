@@ -1,0 +1,28 @@
+html, 
+body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    
+}
+
+
+.mainContainer {
+    width: 100%;
+    grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+}
+
+.jumbotron {
+    align-content: center;
+}
+
+li {
+    border-bottom-style: black;
+    border: 3px;
+    color: pink;
+}
+
+.localStorage {
+    border-radius: 5px;
+}
