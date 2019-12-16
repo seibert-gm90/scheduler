@@ -40,7 +40,8 @@ $(document).ready(function () {
         var input = $(".userText")[index]
         var task = $(input).val() 
         localStorage.setItem("valArray", task)
-        // $(localStorage.getItem('valArray', JSON.stringify(myObj));
-        // var user = JSON.parse(localStorage.getItem('user'));
+        userTextInput = JSON.parse(localStorage.getItem("valArray") || task);
+        
     })
+
 })
