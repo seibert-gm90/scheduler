@@ -1,3 +1,5 @@
+//display date, time, and schedule on page load
+
 $(document).ready(function () {
     var currentHour = moment().format("hh:mm:ss A");
     var currentDate = moment().format("dddd, MMMM Do YYYY");
@@ -15,6 +17,8 @@ $(document).ready(function () {
             $("#currentTime").text(currentHour);
         }, 1000);
     };
+
+    //function to show current time
     updateCurrentTime()
 
 
@@ -24,6 +28,8 @@ $(document).ready(function () {
     var inputVal = $(".userText").val();
     var valArray = [""]
 
+
+//function to grab user input values
     function valueCheck() {
 
         for (var i = 0; i < ul.length; i++) {
@@ -34,6 +40,8 @@ $(document).ready(function () {
         valueCheck()
     }
 
+
+//save to local storage
     $(".save").click(function () {
         event.preventDefault();
         var index = $(this).attr("data-slot")
