@@ -47,8 +47,10 @@ $(document).ready(function () {
         var index = $(this).attr("data-slot")
         var input = $(".userText")[index]
         var task = $(input).val() 
-        localStorage.setItem("valArray", task)
-        userTextInput = JSON.parse(localStorage.getItem("valArray") || task);
+        localStorage.setItem("valArray", task); 
+        valArray.push(task)
+        // var x=localStorage.getItem("valArray"[i]);
+        // $(input).text=x
         
     })
 

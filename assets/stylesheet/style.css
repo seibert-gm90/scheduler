@@ -4,16 +4,8 @@ body {
     margin: 0;
     padding: 0;
     align-content: center;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
-#mainContainer {
-    width: auto; 
-
-    
-}
-
 .jumbotron {
     align-content: center;
 }
@@ -21,7 +13,7 @@ body {
 li {
     border-bottom-style: black;
     border: 3px;
-    color: pink;
+    color: whitesmoke;
 }
 
 .localStorage {
