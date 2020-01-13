@@ -11,75 +11,79 @@
 </head>
 
 <body>
-    <div class= "row" id="mainContainer">
+    <div class="row" id="mainContainer">
         <header>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h1 class="welcomeMessage">Day Planner Scheduler</h1>
-                    <p class="lead">Plan your day by typing events in the fields below and clicking the save button.
+                    <h1 class="title">Day Planner Scheduler</h1>
+                    <p class="description">Plan your day by typing events in the fields below and clicking the save button.
                     </p>
                 </div>
             </div>
         </header>
-        <div class="row" style="justify-content: center;">
+        <div class="row" >
             <h2 id="currentTime"></h2>
         </div>
-        <div class="row" style="justify-content: center;">
+        <div class="row" >
             <h3 id="todaysDate"></h3>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
-            <div class="schedule col">
-                <ul id="timeSlots">
-                    <li class="row hourSlot" id="hourOne" style="list-style-type:none;">
+            <div class="schedule col justify-content-center">
+                <div id="timeSlots">
+                    <div class="row hourSlot" id="hourOne">
                         9am
                         <input class="userText" type="text">
                         <button data-slot=0 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourTwo" style="list-style-type:none;">
+                    </div>
+
+                    <div class="row hourSlot" id="hourTwo" style="list-style-type:none;">
                         10am
                         <input class="userText" type="text">
                         <button data-slot=1 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourThree" style="list-style-type:none;">
+                    </div>
+                    <div class="row hourSlot" id="hourThree" style="list-style-type:none;">
                         11am
                         <input class="userText" type="text">
                         <button data-slot=2 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourFour" style="list-style-type:none;">
+                    </div>
+                    <div class="row hourSlot" id="hourFour" style="list-style-type:none;">
                         12pm
                         <input class="userText" type="text">
                         <button data-slot=3 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourFive" style="list-style-type:none;">
+                    </div>
+                    <div class="row hourSlot" id="hourFive" style="list-style-type:none;">
                         1pm
                         <input class="userText" type="text">
                         <button data-slot=4 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourSix" style="list-style-type:none;">
+                    </div>
+                    <div class="row hourSlot" id="hourSix" style="list-style-type:none;">
                         2pm
                         <input class="userText" type="text">
                         <button data-slot=5 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourSeven" style="list-style-type:none;">
+                    </div>
+                    <div class="row hourSlot" id="hourSeven" style="list-style-type:none;">
                         3pm
                         <input class="userText" type="text">
                         <button data-slot=6 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourEight" style="list-style-type:none;">
+                    </div>
+                    <div class="row hourSlot" id="hourEight" style="list-style-type:none;">
                         4pm
                         <input class="userText" type="text">
                         <button data-slot=7 class="save localStorage">Save</button>
-                    </li>
-                    <li class="row hourSlot" id="hourNine" style="list-style-type:none;">
+                    </div>
+                    <div class="row hourSlot" id="hourNine" style="list-style-type:none;">
                         5pm
                         <input class="userText" type="text">
                         <button data-slot=8 class="save localStorage">Save</button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

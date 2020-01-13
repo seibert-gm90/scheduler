@@ -1,21 +1,35 @@
-html, 
 body {
-    background-color: grey;
-    margin: 0;
-    padding: 0;
-    align-content: center;
+    background-image: url("https://images.pexels.com/photos/3132346/pexels-photo-3132346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
 }
-.jumbotron {
-    align-content: center;
+body::after {
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.schedule {
+    color: whitesmoke;
+    box-sizing: border-box;
+    width: auto;
+    border: none;
+    padding: 10px;
 }
 
-li {
-    border-bottom-style: black;
-    border: 3px;
+.save {
+    border-radius: 5px;
+    background-color: #FE6E66;
     color: whitesmoke;
 }
 
-.localStorage {
-    border-radius: 5px;
+.userText {
+    width: 100%;
 }
+
