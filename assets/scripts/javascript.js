@@ -44,14 +44,46 @@ $(document).ready(function () {
 //save to local storage
     $(".save").click(function () {
         event.preventDefault();
-        var index = $(this).attr("data-slot")
-        var input = $(".userText")[index]
-        var task = $(input).val() 
-        localStorage.setItem("valArray", task); 
-        valArray.push(task)
-        // var x=localStorage.getItem("valArray"[i]);
-        // $(input).text=x
+        var time = $(this).parent().attr("id")
+        console.log(time)
+        var task = $(this).siblings("input").val() 
+        console.log(task)
+        writeLocalStorage(time,task)
+       
         
     })
+
+   function writeLocalStorage(time,text){
+       var events = readLocalStorage()
+       events[time] = text
+       console.log(events)
+       localStorage.setItem('storeObj', JSON.stringify(events));
+   }
+
+   function readLocalStorage(){
+    var getObject = JSON.parse(localStorage.getItem('storeObj'));
+    if (getObject===null){
+        getObject = {}
+    }
+    console.log(getObject)
+    return getObject
+    
+   }
+   
+   function loadLocalStorage(){
+       var scheduleEvents = readLocalStorage()
+       for (let prop in scheduleEvents) {
+        if (Object.prototype.hasOwnProperty.call(scheduleEvents, prop)) {
+            console.log(prop)
+            console.log(scheduleEvents[prop])
+            var elementID = prop
+            var textValue = scheduleEvents[prop] 
+            $(`#${elementID}`).children("input").val(textValue)
+            
+            
+        }
+    }
+   }
+   loadLocalStorage()
 
 })
